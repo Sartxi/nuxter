@@ -5,8 +5,14 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css", "animate.css"],
 
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: "page", mode: "out-in" },
   },
 
   modules: ["@nuxthub/core"],
+
+  $development: {
+    hub: {
+      remote: true,
+    },
+  },
 });
